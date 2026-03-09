@@ -3,7 +3,7 @@
 This repository contains the updated working version of the original Personalized Cards project, migrated to a newer Expo SDK in order to restore compatibility with current tooling.
 
 - **Original version:** includes the original development timeline and initial implementation 
-[View Original Project] (https://github.com/DianaEP/personalized-cards)
+[View Original Project](https://github.com/DianaEP/personalized-cards)
 
 
 ## Compatibility adjustments in this version
