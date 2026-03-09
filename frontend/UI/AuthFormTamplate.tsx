@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import Button from "./buttons/Button";
-import { Link } from "expo-router";
+import { Href, Link } from "expo-router";
 import { colors } from "./theme";
 import { User } from "../util/interfaces";
 import { platformStyle } from "./shadowStyle";
@@ -17,7 +17,7 @@ interface FromProps{
     onSubmit: () => void;
     buttonText: string;
     linkText: string;
-    linkUrl: string;
+    linkUrl: Href;
     showNameField: boolean;
     errors: Errors;
 }

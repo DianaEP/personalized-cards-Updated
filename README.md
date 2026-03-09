@@ -22,3 +22,62 @@ Because of the same dependency compatibility issues affecting the color picker, 
 
 The goal of this version is to preserve the core project functionality under a modern Expo environment while keeping the original project structure and editing flow operational.
 
+## Getting Started
+
+1. **Clone the Repository**
+
+``` bash
+ git clone https://github.com/DianaEP/personalized-cards-Updated.git
+ cd personalized-cards-Updated
+
+```
+
+
+2. **Setup the Backend**
+
+```bash
+
+cd backend
+npm install
+npm start
+
+```
+
+
+3. **Setup the Frontend**
+
+```bash
+
+cd frontend
+npm install
+npm start
+
+```
+
+
+## ***Important Notes***
+The app is designed to run on **Android Emulator**.
+  - If testing on a **real device**, update the **API base URL** in axiosInstance with your IP Address:
+
+```ts
+  const axiosInstance = axios.create({
+    baseURL: 'http://YOUR_IP_ADDRESS:5000',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+```
+1. Open the terminal on your device and type:
+
+```bash 
+
+  ipconfig
+
+```
+
+2. Look for the IPv4 address in the output, which is your local IP address.
+
+3. Replace **YOUR_IP_ADDRESS** with your local network IP.
+
+
