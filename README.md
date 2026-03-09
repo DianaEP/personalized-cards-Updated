@@ -1,50 +1,24 @@
-# Welcome to your Expo app 👋
+# Notes on the updated expo SDK version for Personalized Cards Project👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This repository contains the updated working version of the original Personalized Cards project, migrated to a newer Expo SDK in order to restore compatibility with current tooling.
 
-## Get started
+- **Original version:** includes the original development timeline and initial implementation 
+[View Original Project] (https://github.com/DianaEP/personalized-cards)
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+## Compatibility adjustments in this version
 
-2. Start the app
+- **Permanent file storage was removed from the image save flow.**
+In the original implementation, generated images were moved to persistent storage after capture. In the updated Expo SDK environment, this approach became unreliable due to changes in file system APIs and platform restrictions, especially on iOS.
+The current version keeps and uses the generated image URI directly from the temporary cache.
 
-   ```bash
-   npx expo start
-   ```
+- **Color picker is currently disabled.**
+The original color picker implementation relied on dependencies that became incompatible after upgrading Expo and related animation packages.
 
-In the output, you'll find options to open the app in a
+- **Color switching for overlays/text is limited in this version.**
+Because of the same dependency compatibility issues affecting the color picker, dynamic color controls are not fully available in the updated build.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Purpose of this repository
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The goal of this version is to preserve the core project functionality under a modern Expo environment while keeping the original project structure and editing flow operational.
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

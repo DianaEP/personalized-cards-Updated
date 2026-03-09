@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE or Editor folders
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Dependency directories for local environments
+/.eslintcache
+/.cache
+
+# SQLite database file (if applicable)
+*.sqlite
+*.sqlite3
